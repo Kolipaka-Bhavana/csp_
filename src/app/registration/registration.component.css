@@ -1,0 +1,52 @@
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-img {
+    /* The image used */
+    background-image: url("https://img.freepik.com/premium-vector/colorful-beautiful-flower-background-with-modern-look_588409-494.jpg?w=2000");
+  
+    /* Control the height of the image */
+    min-height: 700px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .container {  
+    max-width: 250px;  
+    padding: 10px;  
+    position: absolute;  
+    left: 500px;  
+    top: 2px;  
+    margin: 50px;  
+}  
+
+  /* Full-width input fields */
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=text]:focus, input[type=text]:focus, input[type=password]:focus, input[type=submit]{
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+.buttoncancel {
+ color: #fcc;
+ background-color: #900;
+ font-size: 1.5em;
+ border: 1px solid #660;
+ padding: 4px;        
+}

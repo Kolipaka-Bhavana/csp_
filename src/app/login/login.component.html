@@ -1,0 +1,36 @@
+<h1>here's the registration form</h1>
+ <body>
+     <div class="main"> 
+        <img src="https://i.ytimg.com/vi/ZctUcvkIhGo/sddefault.jpg" style="width:100%;">
+        <div *ngIf="isLoggedIn; else loginForm">
+             <p>Welcome, {{ username }}!</p>
+              <br>
+               <ul> 
+                <li *ngFor="let item of items">{{ item }}</li>
+             </ul>
+              <br>
+               <div [ngSwitch]="color">
+                 <p *ngSwitchCase="'red'" [ngStyle]="{ color: 'red' }">Red text</p> 
+                 <p *ngSwitchCase="'green'" [ngStyle]="{ color: 'green' }">Green text</p>
+                  <p *ngSwitchCase="'blue'" [ngStyle]="{ color: 'blue' }">Blue text</p>
+                   <p *ngSwitchDefault>Default text</p> </div> <br> <button (click)="submit()">submit</button>
+                 </div>
+                 </div>
+                  <ng-template #loginForm> 
+                    <form>
+                         <label> 
+                            username:
+                         </label>
+                         <br>
+                             <input type="text" [(ngModel)]="username" name="username" placeholder="Username">
+                             <br>
+                             <br>
+                              <label>
+                                password:
+                             </label>
+                             <input type="password" [(ngModel)]="password" name="password" placeholder="Password">
+                              <br>
+                               <button type="submit"(click)="login()" class="signup">Register</button>
+                             </form>
+                             </ng-template>
+                             </body>
